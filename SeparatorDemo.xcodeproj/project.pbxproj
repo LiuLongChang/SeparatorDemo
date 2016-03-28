@@ -16,6 +16,9 @@
 		942052931CA92E2A00C26923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942052911CA92E2A00C26923 /* LaunchScreen.storyboard */; };
 		9420529E1CA92E2A00C26923 /* SeparatorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9420529D1CA92E2A00C26923 /* SeparatorDemoTests.m */; };
 		942052A91CA92E2A00C26923 /* SeparatorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 942052A81CA92E2A00C26923 /* SeparatorDemoUITests.m */; };
+		942052B81CA92E5900C26923 /* EaseStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 942052B71CA92E5900C26923 /* EaseStartView.m */; };
+		942052BB1CA92EDD00C26923 /* StartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 942052BA1CA92EDD00C26923 /* StartImage.m */; };
+		98D23F16144D45ADE5899EF1 /* libPods-SeparatorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 316011983DF3CDA266E2255D /* libPods-SeparatorDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00CD23C8003D526990A1C3A9 /* Pods-SeparatorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparatorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SeparatorDemo/Pods-SeparatorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		316011983DF3CDA266E2255D /* libPods-SeparatorDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeparatorDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9420527D1CA92E2900C26923 /* SeparatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeparatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		942052811CA92E2900C26923 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		942052831CA92E2900C26923 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +58,11 @@
 		942052A41CA92E2A00C26923 /* SeparatorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeparatorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		942052A81CA92E2A00C26923 /* SeparatorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeparatorDemoUITests.m; sourceTree = "<group>"; };
 		942052AA1CA92E2A00C26923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942052B61CA92E5900C26923 /* EaseStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseStartView.h; sourceTree = "<group>"; };
+		942052B71CA92E5900C26923 /* EaseStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseStartView.m; sourceTree = "<group>"; };
+		942052B91CA92EDD00C26923 /* StartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartImage.h; sourceTree = "<group>"; };
+		942052BA1CA92EDD00C26923 /* StartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartImage.m; sourceTree = "<group>"; };
+		B313C49FA79776188C65D69F /* Pods-SeparatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeparatorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SeparatorDemo/Pods-SeparatorDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D23F16144D45ADE5899EF1 /* libPods-SeparatorDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DB77939B4CDD82AD87D41ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00CD23C8003D526990A1C3A9 /* Pods-SeparatorDemo.debug.xcconfig */,
+				B313C49FA79776188C65D69F /* Pods-SeparatorDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4FF90A658586BE2D925F3D46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				316011983DF3CDA266E2255D /* libPods-SeparatorDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		942052741CA92E2900C26923 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +115,8 @@
 				9420529C1CA92E2A00C26923 /* SeparatorDemoTests */,
 				942052A71CA92E2A00C26923 /* SeparatorDemoUITests */,
 				9420527E1CA92E2900C26923 /* Products */,
+				2DB77939B4CDD82AD87D41ED /* Pods */,
+				4FF90A658586BE2D925F3D46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +133,10 @@
 		9420527F1CA92E2900C26923 /* SeparatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				942052B61CA92E5900C26923 /* EaseStartView.h */,
+				942052B71CA92E5900C26923 /* EaseStartView.m */,
+				942052B91CA92EDD00C26923 /* StartImage.h */,
+				942052BA1CA92EDD00C26923 /* StartImage.m */,
 				942052831CA92E2900C26923 /* AppDelegate.h */,
 				942052841CA92E2900C26923 /* AppDelegate.m */,
 				942052861CA92E2900C26923 /* ViewController.h */,
@@ -150,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 942052AD1CA92E2A00C26923 /* Build configuration list for PBXNativeTarget "SeparatorDemo" */;
 			buildPhases = (
+				AE500DEFE131FD9E70B23C38 /* Check Pods Manifest.lock */,
 				942052791CA92E2900C26923 /* Sources */,
 				9420527A1CA92E2900C26923 /* Frameworks */,
 				9420527B1CA92E2900C26923 /* Resources */,
+				D012FF43274795D57A385256 /* Embed Pods Frameworks */,
+				CF58F3AD7E9A39876C8A0371 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,11 +305,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE500DEFE131FD9E70B23C38 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF58F3AD7E9A39876C8A0371 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeparatorDemo/Pods-SeparatorDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D012FF43274795D57A385256 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SeparatorDemo/Pods-SeparatorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		942052791CA92E2900C26923 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942052BB1CA92EDD00C26923 /* StartImage.m in Sources */,
+				942052B81CA92E5900C26923 /* EaseStartView.m in Sources */,
 				9420528E1CA92E2A00C26923 /* SeparatorDemo.xcdatamodeld in Sources */,
 				942052881CA92E2900C26923 /* ViewController.m in Sources */,
 				942052851CA92E2900C26923 /* AppDelegate.m in Sources */,
@@ -415,6 +502,7 @@
 		};
 		942052AE1CA92E2A00C26923 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00CD23C8003D526990A1C3A9 /* Pods-SeparatorDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SeparatorDemo/Info.plist;
@@ -426,6 +514,7 @@
 		};
 		942052AF1CA92E2A00C26923 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B313C49FA79776188C65D69F /* Pods-SeparatorDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SeparatorDemo/Info.plist;
@@ -502,6 +591,7 @@
 				942052AF1CA92E2A00C26923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		942052B01CA92E2A00C26923 /* Build configuration list for PBXNativeTarget "SeparatorDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +600,7 @@
 				942052B21CA92E2A00C26923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		942052B31CA92E2A00C26923 /* Build configuration list for PBXNativeTarget "SeparatorDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +609,7 @@
 				942052B51CA92E2A00C26923 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
